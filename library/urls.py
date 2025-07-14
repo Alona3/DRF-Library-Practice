@@ -26,8 +26,11 @@ urlpatterns = [
     path('api/', include('books.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+<<<<<<< HEAD
     path("api/", include("library_books.urls")),
     path("api/", include("users.urls")),
     path('api/', include('borrowings.urls')),
 
+=======
+>>>>>>> 9584a163bf5bf3143aa5843d8161258c3f89a918
 ]
