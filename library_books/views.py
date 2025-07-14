@@ -1,6 +1,8 @@
 from rest_framework import viewsets, permissions
 from .models import Book
 from .serializers import BookSerializer
+from .permissions import IsAdminOrReadOnly
+
 
 class IsAdminOrReadOnly(permissions.BasePermission):
     def has_permission(self, request, view):

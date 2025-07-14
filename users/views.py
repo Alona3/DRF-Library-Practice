@@ -1,10 +1,10 @@
-from rest_framework import generics, permissions
-from .serializers import UserRegisterSerializer
+from rest_framework import viewsets, permissions
 from django.contrib.auth import get_user_model
+from .serializers import UserRegisterSerializer
 
 User = get_user_model()
 
-class RegisterView(generics.CreateAPIView):
+class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    permission_classes = (permissions.AllowAny,)
     serializer_class = UserRegisterSerializer
+    permission_classes = [permissions.IsAdminUser]
