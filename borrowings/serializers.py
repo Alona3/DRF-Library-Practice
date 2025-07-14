@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Borrowing
 from library_books.serializers import BookSerializer
+from library.models import Book
+
 
 class BorrowingSerializer(serializers.ModelSerializer):
     book = BookSerializer(read_only=True)
