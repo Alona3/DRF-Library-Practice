@@ -45,11 +45,8 @@ INSTALLED_APPS = [
     'books',
     'users',
     'library_books',
-<<<<<<< HEAD
     'library',
     'borrowings',
-=======
->>>>>>> 9584a163bf5bf3143aa5843d8161258c3f89a918
 ]
 
 MIDDLEWARE = [

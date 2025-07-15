@@ -1,6 +1,6 @@
 from django.db import models
 
-<<<<<<< HEAD
+
 class Book(models.Model):
     class CoverChoices(models.TextChoices):
         HARD = "HARD", "Hard"
@@ -14,6 +14,3 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title} by {self.author}"
-=======
-# Create your models here.
->>>>>>> 9584a163bf5bf3143aa5843d8161258c3f89a918
